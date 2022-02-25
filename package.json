@@ -1,0 +1,14 @@
+{
+  "id": "activecollab",
+  "name": "Active Collab",
+  "version": "1.0.0",
+  "description": "Active Collab (on premise)",
+  "main": "index.js",
+  "author": "Steffen Gramberg <gramberg@gmail.com>",
+  "license": "MIT",
+  "config": {
+    "hasCustomUrl": true,
+    "hasNotificationSound": true,
+    "hasIndirectMessages": false
+  }
+}
