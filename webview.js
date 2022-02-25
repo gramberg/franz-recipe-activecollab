@@ -1,14 +1,8 @@
 module.exports = (Franz) => {
   const getMessages = () => {
-    let count = 0;
+    const count = document.querySelector(".ac-bell-notification .ac-bell-count");
 
-    const bellCount = document.querySelector(".ac-bell-notification .ac-bell-count");
-
-    if(bellCount) {
-      count = Ferdi.safeParseInt(bellCount.innerHTML);
-    }
-
-    Franz.setBadge(count);
+    Franz.setBadge(count ? Ferdi.safeParseInt(count.innerHTML) : 0);
   };
 
   Franz.loop(getMessages);
